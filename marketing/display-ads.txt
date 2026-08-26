@@ -1,0 +1,84 @@
+DRIFTLINE TRAVEL CO. - GOOGLE ADS RESPONSIVE DISPLAY CAMPAIGN ASSETS
+====================================================================
+
+NOTE: All copy in this file is a starting draft. Before running any of it, review
+every line against current Google Ads editorial and travel policy, and against
+Driftline's own substantiated claims. Do not run a line you cannot back up with
+evidence. Pricing, plan limits and statistics change; re-verify before launch.
+
+Character counts shown in brackets include spaces and punctuation.
+
+
+BUSINESS NAME (25 characters max)
+---------------------------------
+Driftline Travel Co. [20]
+
+
+SHORT HEADLINES (30 characters max - 15 assets)
+-----------------------------------------------
+Plan Your Trip Day By Day [25]
+A Timed Plan For Every Day [26]
+See What Each Day Will Cost [27]
+Trip Planning Without Tabs [26]
+Costed Itineraries To Copy [26]
+Plan A Family Trip Together [27]
+Free Day By Day Trip Planner [28]
+Budget A Trip In US Dollars [27]
+Road Trip Plans That Work [25]
+Make PTO Days Go Further [24]
+First Trip Abroad Guide [23]
+Group Trips, One Plan [21]
+Travel Times Between Stops [26]
+Packing Checklists, Free [24]
+Build A Trip In Minutes [23]
+
+
+LONG HEADLINE (90 characters max - 5 assets)
+--------------------------------------------
+Turn a rough travel idea into a timed day plan with costs in US dollars [71]
+See the travel time between every stop before you commit to the schedule [72]
+Day by day itinerary cards with timings, travel times and daily costs [69]
+Packing checklists, a budget estimator and costed sample itineraries [68]
+A planner built for travelers flying out of US airports on limited time off [75]
+
+
+DESCRIPTIONS (90 characters max - 10 assets)
+--------------------------------------------
+Give each stop a time, a cost and a travel time to the next one. Then adjust. [77]
+Free for two trips. Pro adds unlimited trips, PDF export and shared editing. [76]
+Every destination guide includes a budget table and a costed three day plan. [76]
+Watch the daily total update as you add stops, in US dollars, per person. [73]
+Share the plan so everyone edits one document instead of three group chats. [75]
+Print the itinerary or export a PDF so it works with no signal on the road. [75]
+Packing checklists for carry on, cold weather, beach trips and documents. [73]
+Made for US travelers working around PTO days and domestic departure hubs. [74]
+Cost bands are researched estimates, refreshed at least twice every year. [73]
+Fifteen destination guides with timing windows, budgets and day by day plans. [77]
+
+
+CALL TO ACTION SUGGESTIONS (5 assets)
+-------------------------------------
+Learn more [10]
+Get started [11]
+Sign up [7]
+See more [8]
+Download [8]
+
+
+COPY NOTES FOR THE REVIEWER
+---------------------------
+- No superlatives, rankings, "best", "cheapest" or "guaranteed" language is used.
+- No specific prices, fares or discounts. Product facts such as the free tier
+  covering two trips must be re-confirmed against the live product before launch.
+- No airline, hotel, competitor or trademarked brand names.
+- No urgency, scarcity, countdowns or invented statistics.
+- "US" and "PTO" are genuine acronyms and are the only capitalized abbreviations.
+- No phone numbers, no self-reference to the ad, no "click here" language.
+- Every line stands alone, because Google recombines headlines and descriptions.
+- Angles covered across the set: planning speed, day by day organization,
+  budgeting in USD, group and family trips, first time international travelers,
+  road trips, and departures from US airports.
+- Image assets should follow the site design direction: soft focus coastal and
+  landscape photography, calm aqua palette, generous space, no text baked into
+  the image beyond what Google allows.
+- Tone matches the site: calm, plain, specific. No exclamation marks.

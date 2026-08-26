@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trip Planner | Build a Timed, Costed Itinerary | Driftline</title>
+<meta name="description" content="Build a day-by-day itinerary in your browser. Add timed stops, travel times and costs in USD, and watch the daily and total budget update as you go. Free for two trips.">
+<link rel="canonical" href="https://www.driftline.travel/trip-planner.html">
+<meta name="theme-color" content="#7FD4E8">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Driftline Travel Co.">
+<meta property="og:title" content="Trip Planner | Build a Timed, Costed Itinerary">
+<meta property="og:description" content="Add timed stops, travel times and costs in USD, and watch the daily budget update as you build.">
+<meta property="og:url" content="https://www.driftline.travel/trip-planner.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=70">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Driftline Trip Planner",
+  "url": "https://www.driftline.travel/trip-planner.html",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Any modern web browser",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "Driftline Travel Co." }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="bg-mesh" aria-hidden="true">
+  <span class="bg-mesh__blob bg-mesh__blob--1"></span>
+  <span class="bg-mesh__blob bg-mesh__blob--2"></span>
+  <span class="bg-mesh__blob bg-mesh__blob--3"></span>
+</div>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html" aria-label="Driftline Travel Co. home">
+    <span class="wordmark__dot" aria-hidden="true"></span>Drift<strong>line</strong>
+  </a>
+  <nav class="capsule-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="trip-planner.html" aria-current="page">Planner</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="itineraries.html">Itineraries</a>
+    <a href="blog.html">Guides</a>
+    <a href="pricing.html">Pricing</a>
+    <div class="nav-drop">
+      <button class="nav-drop__btn" type="button" aria-expanded="false" aria-controls="more-menu">More</button>
+      <div class="nav-drop__menu" id="more-menu" data-open="false">
+        <a href="for-travel-agents.html">For Travel Agents</a>
+        <a href="tools.html">Checklists &amp; Free Tools</a>
+        <a href="testimonials.html">Traveler Reviews</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <a class="btn btn--primary header-cta" href="pricing.html">Go Pro</a>
+  <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav">
+    <span class="nav-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-nav-drawer data-open="false">
+  <div class="mobile-nav__panel">
+    <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="trip-planner.html" aria-current="page">Trip Planner</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="itineraries.html">Sample Itineraries</a>
+      <a href="blog.html">Travel Guides</a>
+      <a href="pricing.html">Pricing &amp; Plans</a>
+      <p class="mobile-nav__group">More from Driftline</p>
+      <a href="for-travel-agents.html">For Travel Agents</a>
+      <a href="tools.html">Checklists &amp; Free Tools</a>
+      <a href="testimonials.html">Traveler Reviews</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <a class="btn btn--primary btn--block mt-4" href="pricing.html">Compare plans</a>
+  </div>
+</div>
+
+<div class="page">
+<main id="main">
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Trip Planner</nav>
+      <h1>Itinerary builder</h1>
+      <p class="lead">Add a stop, give it a time and a cost, and note how long it takes to reach the next one. Everything totals as you type. Your work stays in this browser until you choose to save it.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="builder-h">
+    <div class="wrap">
+      <h2 id="builder-h" class="visually-hidden">Trip builder</h2>
+
+      <div class="planner" data-planner>
+
+        <!-- Builder column -->
+        <div>
+          <div class="panel" style="margin-bottom:1.5rem">
+            <div class="grid grid--2" style="gap:1rem">
+              <div class="field" style="margin:0">
+                <label for="trip-title">Trip name</label>
+                <input type="text" id="trip-title" value="My trip" data-label="Trip name">
+              </div>
+              <div class="field" style="margin:0">
+                <label for="trip-travellers">Travelers in your party</label>
+                <input type="number" id="trip-travellers" min="1" max="12" step="1" value="2" data-label="Travelers">
+              </div>
+            </div>
+            <p class="field-hint mt-4">Costs are entered per person. The summary multiplies shared totals by the number of travelers.</p>
+          </div>
+
+          <div data-planner-days aria-live="polite"></div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:0.6rem">
+            <button class="btn btn--primary" type="button" data-add-day>Add another day</button>
+            <button class="btn" type="button" data-planner-save>Save to this browser</button>
+            <button class="btn btn--ghost" type="button" data-planner-clear>Clear the trip</button>
+          </div>
+          <p class="field-hint mt-4" data-planner-note>Nothing is saved until you press save, or until you allow functional storage in your cookie preferences.</p>
+        </div>
+
+        <!-- Summary column -->
+        <aside class="planner__side" aria-label="Trip summary">
+          <div class="panel">
+            <h2 style="font-size:1.35rem">Trip summary</h2>
+            <div class="summary-line"><span>Days planned</span><b data-sum-days>0</b></div>
+            <div class="summary-line"><span>Stops added</span><b data-sum-stops>0</b></div>
+            <div class="summary-line"><span>Average day, per person</span><b data-sum-perday>$0</b></div>
+            <div class="summary-line"><span>Trip cost, per person</span><b data-sum-person>$0</b></div>
+            <p class="summary-total" aria-live="polite"><span class="visually-hidden">Estimated total for the whole party </span><span data-sum-total>$0</span></p>
+            <p class="field-hint">Estimated total for the whole party, excluding flights and lodging unless you added them as stops.</p>
+
+            <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.25rem">
+              <button class="btn btn--sm btn--primary" type="button" data-planner-export>Print or save as PDF</button>
+              <a class="btn btn--sm" href="pricing.html">Unlock Pro export</a>
+            </div>
+
+            <hr>
+            <h3 style="font-size:1.05rem">Pace guidance</h3>
+            <ul style="padding-left:1.1rem;font-size:0.9375rem;color:var(--ink-2)">
+              <li>Three paid attractions in one day is usually one too many.</li>
+              <li>Leave 90 minutes unplanned every afternoon. It is where the trip actually happens.</li>
+              <li>Anything over four hours of driving stops being a travel day and becomes a driving day.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <aside class="ad-slot" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <div class="ad-slot__box">Ad unit 728 x 90</div>
+    </aside>
+  </div>
+
+  <!-- Starting points -->
+  <section class="section" aria-labelledby="start-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="start-h">Rather start from something finished?</h2>
+        <p>Every sample itinerary is a complete, costed plan you can read straight through and adapt.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card card--link post-card reveal">
+          <div class="photo photo--soft" data-label="Iceland Ring Road">
+            <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&w=700&q=70"
+                 alt="Waterfall over dark cliffs in southern Iceland" width="700" height="394" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <h3>Iceland in 7 days</h3>
+            <p>Reykjavik, the Golden Circle and the south coast, with driving times that assume real weather.</p>
+            <a class="link-arrow" href="itinerary-iceland-ring-road.html">Open the itinerary</a>
+          </div>
+        </article>
+        <article class="card card--link post-card reveal">
+          <div class="photo photo--soft" data-label="Kyoto and Osaka">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=700&q=70"
+                 alt="Rows of vermilion torii gates on a hillside path in Kyoto" width="700" height="394" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <h3>Kyoto and Osaka in 6 days</h3>
+            <p>Temple routing that avoids doubling back, plus which rail pass is worth the money.</p>
+            <a class="link-arrow" href="itinerary-kyoto-osaka.html">Open the itinerary</a>
+          </div>
+        </article>
+        <article class="card card--link post-card reveal">
+          <div class="photo photo--soft" data-label="Utah national parks">
+            <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=700&q=70"
+                 alt="Sandstone cliffs glowing at sunrise in southern Utah" width="700" height="394" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <h3>Utah parks in 9 days</h3>
+            <p>Zion, Bryce, Capitol Reef, Arches and Canyonlands with permit windows spelled out.</p>
+            <a class="link-arrow" href="itinerary-utah-parks.html">Open the itinerary</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planner FAQ -->
+  <section class="section" aria-labelledby="pfaq-h">
+    <div class="wrap wrap--read">
+      <div class="section-head">
+        <h2 id="pfaq-h">Questions about the builder</h2>
+        <p>Short answers. Longer ones live on the <a href="faq.html">FAQ page</a>.</p>
+      </div>
+      <div class="accordion">
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="pf1">Where is my trip stored?<span class="acc-btn__mark" aria-hidden="true">+</span></button></h3>
+          <div class="acc-panel" id="pf1" data-open="false">
+            <p>In this browser, using local storage on your own device. It is not sent to our servers unless you create an account and sync it. If you clear your browser data, the trip goes with it.</p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="pf2">Do I need an account?<span class="acc-btn__mark" aria-hidden="true">+</span></button></h3>
+          <div class="acc-panel" id="pf2" data-open="false">
+            <p>Not to build or print a plan. You need one to sync across devices, share editing with a travel partner, or export a PDF on the Pro plan.</p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="pf3">How accurate are the cost estimates?<span class="acc-btn__mark" aria-hidden="true">+</span></button></h3>
+          <div class="acc-panel" id="pf3" data-open="false">
+            <p>They are exactly as accurate as the numbers you type. We do not fetch live prices. Our destination guides publish researched cost bands you can copy, and we re-check those bands at least twice a year. Treat them as planning estimates, not quotes.</p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="pf4">Can I plan a trip longer than 14 days?<span class="acc-btn__mark" aria-hidden="true">+</span></button></h3>
+          <div class="acc-panel" id="pf4" data-open="false">
+            <p>The free plan caps at 14 days per trip. Pro goes to 60, which covers sabbaticals, long road trips and multi-country routes.</p>
+          </div>
+        </div>
+        <div class="acc-item">
+          <h3 style="margin:0"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="pf5">Does the planner book anything?<span class="acc-btn__mark" aria-hidden="true">+</span></button></h3>
+          <div class="acc-panel" id="pf5" data-open="false">
+            <p>No. Driftline is a planning tool, not a travel agency. When we link to a booking site, some of those links are affiliate links and are labeled as such. You book directly with the provider and their terms apply. See our <a href="disclaimer.html">Disclaimer</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html"><span class="wordmark__dot" aria-hidden="true"></span>Drift<strong>line</strong></a>
+        <p class="mt-4">Driftline Travel Co. builds day-by-day trip plans for travelers departing from the United States. Independent, subscriber funded, and honest about the affiliate links we use.</p>
+        <address class="footer-contact">
+          Driftline Travel Co.<br>
+          1201 Ocean Avenue, Suite 410<br>
+          Santa Monica, CA 90401, USA<br>
+          <a href="tel:+13105550147">+1 (310) 555-0147</a><br>
+          <a href="mailto:hello@driftline.travel">hello@driftline.travel</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h3>Plan</h3>
+        <ul>
+          <li><a href="trip-planner.html">Trip Planner</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="itineraries.html">Sample Itineraries</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tools.html">Checklists &amp; Free Tools</a></li>
+          <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="for-travel-agents.html">For Travel Agents</a></li>
+          <li><a href="testimonials.html">Traveler Reviews</a></li>
+          <li><a href="blog.html">Travel Guides</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="mb-0">&copy; <span data-year>2026</span> Driftline Travel Co. All rights reserved. Driftline is a trip-planning tool, not a travel agency or tour operator.</p>
+      <p class="footer-legal-row mb-0">
+        <a href="privacy-policy.html#do-not-sell">Do Not Sell or Share My Personal Information</a>
+        <a href="cookie-policy.html" data-open-prefs>Cookie Settings</a>
+        <a href="contact.html">Contact Driftline</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="cookie-banner" data-cookie-banner data-open="false" role="region" aria-label="Cookie consent">
+  <h2>We ask before we set non-essential cookies</h2>
+  <p>Essential cookies keep the site working. Analytics and advertising cookies, including cookies set by Google, stay switched off until you accept them. You can change your mind at any time from the Cookie Settings link in the footer. Details are in our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+  <div class="cookie-banner__actions">
+    <button class="btn btn--primary" type="button" data-consent="accept">Accept all</button>
+    <button class="btn" type="button" data-consent="reject">Reject non-essential</button>
+    <button class="btn btn--ghost" type="button" data-consent="manage">Manage preferences</button>
+  </div>
+</div>
+
+<dialog class="prefs" data-prefs-dialog aria-labelledby="prefs-title">
+  <div class="prefs__body">
+    <h2 id="prefs-title">Cookie preferences</h2>
+    <div class="prefs__row">
+      <label class="checkline"><input type="checkbox" checked disabled> <span><strong>Strictly necessary</strong></span></label>
+      <p>Required for page navigation, form security and remembering your consent choice. Always on.</p>
+    </div>
+    <div class="prefs__row">
+      <label class="checkline" for="pref-functional"><input type="checkbox" id="pref-functional"> <span><strong>Functional</strong></span></label>
+      <p>Saves your trip plans and packing checklists in this browser so they survive a refresh.</p>
+    </div>
+    <div class="prefs__row">
+      <label class="checkline" for="pref-analytics"><input type="checkbox" id="pref-analytics"> <span><strong>Analytics</strong></span></label>
+      <p>Aggregated page and feature usage so we know which guides to keep updating.</p>
+    </div>
+    <div class="prefs__row">
+      <label class="checkline" for="pref-ads"><input type="checkbox" id="pref-ads"> <span><strong>Advertising</strong></span></label>
+      <p>Lets Google and other approved vendors serve and measure ads. Turning this off does not remove ads, it removes personalization.</p>
+    </div>
+  </div>
+  <div class="prefs__foot">
+    <button class="btn" type="button" data-prefs-cancel>Cancel</button>
+    <button class="btn btn--primary" type="button" data-prefs-save>Save preferences</button>
+  </div>
+</dialog>
+
+<button class="to-top" type="button" data-to-top aria-label="Back to top">&#8593;</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
