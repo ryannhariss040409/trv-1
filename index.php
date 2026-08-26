@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Driftline Travel Co. | Day-by-Day Trip Planner for US Travelers</title>
 <meta name="description" content="Driftline turns a vague travel idea into a timed, costed, day-by-day plan. Free for two trips, Pro for unlimited. Built for US travelers planning domestic and international trips.">
-<link rel="canonical" href="https://www.driftline.travel/index.html">
+<link rel="canonical" href="https://www.driftline.world/index.html">
 <meta name="theme-color" content="#7FD4E8">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Driftline Travel Co.">
 <meta property="og:title" content="Driftline Travel Co. | Day-by-Day Trip Planner for US Travelers">
 <meta property="og:description" content="Turn a vague travel idea into a timed, costed, day-by-day plan. Free for two trips, Pro for unlimited.">
-<meta property="og:url" content="https://www.driftline.travel/index.html">
+<meta property="og:url" content="https://www.driftline.world/index.html">
 <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=70">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -30,10 +30,10 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.driftline.travel/#org",
+      "@id": "https://www.driftline.world/#org",
       "name": "Driftline Travel Co.",
-      "url": "https://www.driftline.travel/",
-      "email": "hello@driftline.travel",
+      "url": "https://www.driftline.world/",
+      "email": "hello@driftline.world",
       "telephone": "+1-310-555-0147",
       "address": {
         "@type": "PostalAddress",
@@ -46,10 +46,10 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.driftline.travel/#website",
-      "url": "https://www.driftline.travel/",
+      "@id": "https://www.driftline.world/#website",
+      "url": "https://www.driftline.world/",
       "name": "Driftline Travel Co.",
-      "publisher": { "@id": "https://www.driftline.travel/#org" }
+      "publisher": { "@id": "https://www.driftline.world/#org" }
     },
     {
       "@type": "SoftwareApplication",
@@ -647,7 +647,7 @@
           1201 Ocean Avenue, Suite 410<br>
           Santa Monica, CA 90401, USA<br>
           <a href="tel:+13105550147">+1 (310) 555-0147</a><br>
-          <a href="mailto:hello@driftline.travel">hello@driftline.travel</a>
+          <a href="mailto:hello@driftline.world">hello@driftline.world</a>
         </address>
       </div>
 
